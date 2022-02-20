@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form action="submitted.html">
+        <label>Enter your name:</label><br>
+        <input type="text" required><br><br>
+
+        <label>Enter your email</label><br>
+        <input type="email" required><br><br>
+
+        <label>Enter Your age</label><br>
+        <input type="number" min="18" max="25" required><br><br>
+
+        <label>Gender</label><br>
+        <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <label>Highest Education</label><br>
+        <input type="text"><br><br>
+
+        <label>Specialization :</label><br>
+        <input type="radio" name="specialization" value="frontend" required>
+        <label>Front-End</label><br>
+        <input type="radio" name="specialization" value="backend" required>
+        <label>Back-End</label><br>
+        <input type="radio" name="specialization" value="fullstack" required>
+        <label>Full-stack</label>
+        <br><br>
+        <label>Your prefered programming language :</label><br>
+        <input type="checkbox" value="c++">
+        <label>C++</label><br>
+        <input type="checkbox" value="python">
+        <label>Python</label><br>
+        <input type="checkbox" value="js">
+        <label>JavaScript</label><br>
+        <input type="checkbox" value="php">
+        <label>PHP</label><br>
+        <br>
+        <input type="submit" value="Submit" required>
+    </form>
+</body>
+</html>
